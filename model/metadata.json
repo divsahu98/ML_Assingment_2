@@ -1,0 +1,99 @@
+{
+  "dataset": "UCI Dry Bean Dataset (id 602)",
+  "source_file": "Dry_Bean_Dataset.xlsx",
+  "target": "Class",
+  "features": [
+    "Area",
+    "Perimeter",
+    "MajorAxisLength",
+    "MinorAxisLength",
+    "AspectRation",
+    "Eccentricity",
+    "ConvexArea",
+    "EquivDiameter",
+    "Extent",
+    "Solidity",
+    "roundness",
+    "Compactness",
+    "ShapeFactor1",
+    "ShapeFactor2",
+    "ShapeFactor3",
+    "ShapeFactor4"
+  ],
+  "classes": [
+    "BARBUNYA",
+    "BOMBAY",
+    "CALI",
+    "DERMASON",
+    "HOROZ",
+    "SEKER",
+    "SIRA"
+  ],
+  "n_rows_after_cleaning": 13543,
+  "n_train": 10834,
+  "n_test": 2709,
+  "class_distribution": {
+    "BARBUNYA": 1322,
+    "BOMBAY": 522,
+    "CALI": 1630,
+    "DERMASON": 3546,
+    "HOROZ": 1860,
+    "SEKER": 2027,
+    "SIRA": 2636
+  },
+  "cleaning": {
+    "raw_rows": 13611,
+    "missing_rows_removed": 0,
+    "duplicates_removed": 68
+  },
+  "seed": 2026,
+  "test_size": 0.2,
+  "models": {
+    "Logistic Regression": {
+      "best_params": {
+        "C": 1000,
+        "class_weight": null
+      },
+      "cv_f1_weighted": 0.9251,
+      "train_seconds": 4.9
+    },
+    "Decision Tree": {
+      "best_params": {
+        "criterion": "gini",
+        "max_depth": 10,
+        "min_samples_leaf": 10
+      },
+      "cv_f1_weighted": 0.9109,
+      "train_seconds": 9.1
+    },
+    "KNN": {
+      "best_params": {
+        "n_neighbors": 21,
+        "weights": "distance"
+      },
+      "cv_f1_weighted": 0.9248,
+      "train_seconds": 1.7
+    },
+    "Naive Bayes": {
+      "best_params": {
+        "var_smoothing": 1e-09
+      },
+      "cv_f1_weighted": 0.8958,
+      "train_seconds": 0.2
+    },
+    "Support Vector Machine": {
+      "best_params": {
+        "C": 10,
+        "gamma": 0.1
+      },
+      "cv_f1_weighted": 0.931,
+      "train_seconds": 20.9
+    }
+  },
+  "versions": {
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  }
+}
