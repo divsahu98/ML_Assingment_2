@@ -4,7 +4,7 @@ End-to-end machine-learning workflow: five classifiers are trained and compared 
 the UCI Dry Bean dataset, and an interactive Streamlit app is deployed on Streamlit
 Community Cloud to evaluate the saved models on uploaded test data.
 
-- **Live Streamlit app:** `<paste your https://<app-name>.streamlit.app link here>`
+- **Live Streamlit app:** https://mlassingment2-2026aj05017.streamlit.app/
 - **GitHub repository:** https://github.com/divsahu98/ML_Assingment_2
 
 ---
