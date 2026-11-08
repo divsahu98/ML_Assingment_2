@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# Archives (download the dataset zip and unzip it into data/ instead)
+*.zip
+
+# Assignment brief - submitted separately, not part of the repo
+ML_Assignment_2_AIML_26Oct26.pdf
